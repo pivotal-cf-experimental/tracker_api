@@ -1,5 +1,11 @@
 # TrackerApi
 
+This reduced-functionality fork of the `tracker_api` gem is used for the purpose of looking up the project ID of a Pivotal Tracker story.
+
+All API endpoints except `story` have been removed.
+
+Original documentation is below:
+
 [![Gem Version](https://badge.fury.io/rb/tracker_api.png)](http://badge.fury.io/rb/tracker_api)
 [![Build Status](https://travis-ci.org/dashofcode/tracker_api.png?branch=master)](https://travis-ci.org/dashofcode/tracker_api)
 [![Code Climate](https://codeclimate.com/github/dashofcode/tracker_api.png)](https://codeclimate.com/github/dashofcode/tracker_api)

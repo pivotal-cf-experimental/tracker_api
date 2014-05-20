@@ -90,27 +90,8 @@ module TrackerApi
       data
     end
 
-    # Get projects
-    #
-    # @param [Hash] params
-    # @return [Array[TrackerApi::Resources::Project]]
-    def projects(params={})
-      Endpoints::Projects.new(self).get(params)
-    end
-
-    # Get project
-    #
-    # @param [Hash] params
-    # @return [TrackerApi::Resources::Project]
-    def project(id, params={})
-      Endpoints::Project.new(self).get(id, params)
-    end
-
-    # Get information about the authenticated user
-    #
-    # @return [TrackerApi::Resources::Me]
-    def me
-      Endpoints::Me.new(self).get
+    def story(id)
+      Endpoints::Story.new(self).get(id)
     end
 
     private
